@@ -11,7 +11,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         transport: Transport.KAFKA,
         options: {
           client: {
-            brokers: ['localhost:9092'], // address of Kafka's broker
+            brokers: ['kafka:9092'], // address of Kafka's broker
           },
           consumer: {
             groupId: 'producer-group', // each group receives a message once.
